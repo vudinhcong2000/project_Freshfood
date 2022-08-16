@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #0f9d58;
+  --background-color: #f0f3f7;
+  --secon-color: #9da2ad;
+  --grey: #7a7a7b;
+  --white: #ffffff;
+}
+#about img {
+    border-radius: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px,
+        rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.about-slogan {
+    padding: 4rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.primary-color {
+    color: var(--primary-color);
+}
+
+
+.about-slogan[data-aos^=fade-left][data-aos^=fade-left].aos-animate {
+    transform: translateX(-10rem) !important;
+}
+
+.about-slogan h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--grey);
+}
+@media only screen and (max-width: 600px) {
+    .about {
+        background-image: url(../../assets/img/section_about_img.jpg);
+        background-attachment: fixed;
+    }
+
+    .about-slogan[data-aos^=fade-left][data-aos^=fade-left].aos-animate {
+        transform: translateX(0) !important;
+    }
+}
